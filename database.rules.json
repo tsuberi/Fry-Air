@@ -1,0 +1,26 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+
+    "uploads": {
+      ".write": "auth != null"
+    },
+   "items": {
+      ".write": "auth != null"
+    },
+    "rooms": {
+      ".write": "auth != null"
+    },
+    "users": {
+      ".write": "auth != null"
+    },
+    "mainbank": {
+      ".write": "auth != null"
+    }
+
+
+
+
+  }
+}

@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="list-group">
+
+
+    <div href="#" class="list-group-item active">
+      <span class="glyphicon glyphicon-home"></span>
+      {{room.RoomName}}
+    </div>
+    <div href="#" class="list-group-item">
+      <div>
+        <u>
+          Description
+        </u>
+      </div>
+      <div>
+        <p>
+          {{room.Description}}
+        </p>
+      </div>
+
+      <div>
+        <u>
+          Strategy
+        </u>
+      </div>
+      <div>
+        <p>
+          {{room.Strategy}}
+        </p>
+      </div>
+      <div>
+
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <td>MinPlayers</td>
+              <td>{{room.MinPlayers}}</td>
+              <td>MaxPlayers</td>
+              <td>{{room.MaxPlayers}}</td>
+              <td>MaxSplits</td>
+              <td>{{room.MaxSplits}}</td>
+            </tr>
+            <tr>
+              <td>MinSale</td>
+              <td>{{room.MinSale}}</td>
+              <td>MinBuy</td>
+              <td>{{room.MinBuy}}</td>
+              <td>MaxSplits</td>
+              <td>{{room.MaxSplits}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <button type="button" class="btn btn-success  btn-lg" style="margin-bottom: 20px" (click)="Join()">
+      Join
+    </button>
+
+  </div>
+</div>
+<br>

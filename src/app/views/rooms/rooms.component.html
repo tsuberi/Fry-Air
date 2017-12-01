@@ -1,0 +1,27 @@
+<div class="jumbotron text-center">
+    <h1>Fry-Air</h1>
+    <p>Rooms !</p> 
+    <a class="nav-item" routerLink="/roomform">
+      <span class="glyphicon glyphicon-plus"></span>
+      Create New Room
+    </a>
+    
+</div>
+
+<table class="table table-hover">                
+    <tbody>
+        <tr>
+            <td>Online players :</td>
+            <td>26,328</td>
+            <td>Rooms : </td>
+            <td>854</td>            
+        </tr>                    
+    </tbody>
+</table>
+
+<div *ngFor="let item of (GameService.roomsObs | async)" >
+    <app-room  [room]="item"  ></app-room>    
+</div>
+
+  
+  
